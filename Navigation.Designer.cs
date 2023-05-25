@@ -43,7 +43,7 @@
             this.Name = "Navigation";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Navigations";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Navigation_Load);
