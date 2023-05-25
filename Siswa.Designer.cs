@@ -1,6 +1,6 @@
 ﻿namespace KomiteKu
 {
-    partial class Navigation
+    partial class Siswa
     {
         /// <summary>
         /// Required designer variable.
@@ -30,23 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Navigation
+            // Siswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(209, 676);
-            this.ControlBox = false;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(225, 500);
-            this.Name = "Navigation";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Navigations";
-            this.TopMost = true;
-            this.Load += new System.EventHandler(this.Navigation_Load);
+            this.ClientSize = new System.Drawing.Size(738, 450);
+            this.Name = "Siswa";
+            this.Text = "Siswa";
             this.ResumeLayout(false);
 
         }

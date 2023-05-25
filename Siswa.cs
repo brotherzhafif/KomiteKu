@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace KomiteKu
 {
-    public partial class Navigation : Form
+    public partial class Siswa: Form
     {
-        public Navigation()
+        public Siswa()
         {
             InitializeComponent();
-        }
-
-        private void Navigation_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
