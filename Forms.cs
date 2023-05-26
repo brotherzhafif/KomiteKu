@@ -39,8 +39,6 @@ namespace KomiteKu
             if (form == "navigation") Forms.navigation.Show();
             if (form == "pembayaran") Forms.statusPembayaran.Show();
             if (form == "tambah pembayaran") Forms.tambahPembayaran.Show();
-
-
         }
     }
 }

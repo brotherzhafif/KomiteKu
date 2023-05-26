@@ -30,28 +30,28 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_nis = new System.Windows.Forms.TextBox();
+            this.txt_semester1 = new System.Windows.Forms.TextBox();
             this.label_action_status = new System.Windows.Forms.Label();
             this.btn_submit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_semester2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_semester3 = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt_semester6 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_semester5 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_semester4 = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -67,22 +67,22 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.txt_semester6);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.txt_semester5);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.txt_semester4);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txt_semester3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txt_semester2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txt_nis);
+            this.panel1.Controls.Add(this.txt_semester1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label_action_status);
@@ -104,13 +104,13 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Semester 1";
             // 
-            // txt_nis
+            // txt_semester1
             // 
-            this.txt_nis.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nis.Location = new System.Drawing.Point(51, 83);
-            this.txt_nis.Name = "txt_nis";
-            this.txt_nis.Size = new System.Drawing.Size(297, 31);
-            this.txt_nis.TabIndex = 12;
+            this.txt_semester1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_semester1.Location = new System.Drawing.Point(51, 83);
+            this.txt_semester1.Name = "txt_semester1";
+            this.txt_semester1.Size = new System.Drawing.Size(297, 31);
+            this.txt_semester1.TabIndex = 12;
             // 
             // label_action_status
             // 
@@ -133,6 +133,7 @@
             this.btn_submit.TabIndex = 8;
             this.btn_submit.Text = "Simpan";
             this.btn_submit.UseVisualStyleBackColor = true;
+            this.btn_submit.Click += new System.EventHandler(this.UpdateConfig);
             // 
             // panel2
             // 
@@ -153,13 +154,13 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Rp";
             // 
-            // textBox1
+            // txt_semester2
             // 
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(51, 143);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(297, 31);
-            this.textBox1.TabIndex = 15;
+            this.txt_semester2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_semester2.Location = new System.Drawing.Point(51, 143);
+            this.txt_semester2.Name = "txt_semester2";
+            this.txt_semester2.Size = new System.Drawing.Size(297, 31);
+            this.txt_semester2.TabIndex = 15;
             // 
             // panel3
             // 
@@ -190,13 +191,13 @@
             this.label3.TabIndex = 16;
             this.label3.Text = "Semester 2";
             // 
-            // textBox2
+            // txt_semester3
             // 
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(51, 203);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(297, 31);
-            this.textBox2.TabIndex = 18;
+            this.txt_semester3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_semester3.Location = new System.Drawing.Point(51, 203);
+            this.txt_semester3.Name = "txt_semester3";
+            this.txt_semester3.Size = new System.Drawing.Size(297, 31);
+            this.txt_semester3.TabIndex = 18;
             // 
             // panel4
             // 
@@ -227,13 +228,13 @@
             this.label6.TabIndex = 19;
             this.label6.Text = "Semester 3";
             // 
-            // textBox3
+            // txt_semester6
             // 
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(51, 383);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(297, 31);
-            this.textBox3.TabIndex = 27;
+            this.txt_semester6.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_semester6.Location = new System.Drawing.Point(51, 383);
+            this.txt_semester6.Name = "txt_semester6";
+            this.txt_semester6.Size = new System.Drawing.Size(297, 31);
+            this.txt_semester6.TabIndex = 27;
             // 
             // panel5
             // 
@@ -264,13 +265,13 @@
             this.label8.TabIndex = 28;
             this.label8.Text = "Semester 6";
             // 
-            // textBox4
+            // txt_semester5
             // 
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(51, 323);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(297, 31);
-            this.textBox4.TabIndex = 24;
+            this.txt_semester5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_semester5.Location = new System.Drawing.Point(51, 323);
+            this.txt_semester5.Name = "txt_semester5";
+            this.txt_semester5.Size = new System.Drawing.Size(297, 31);
+            this.txt_semester5.TabIndex = 24;
             // 
             // panel6
             // 
@@ -301,13 +302,13 @@
             this.label10.TabIndex = 25;
             this.label10.Text = "Semester 5";
             // 
-            // textBox5
+            // txt_semester4
             // 
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(51, 263);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(297, 31);
-            this.textBox5.TabIndex = 21;
+            this.txt_semester4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_semester4.Location = new System.Drawing.Point(51, 263);
+            this.txt_semester4.Name = "txt_semester4";
+            this.txt_semester4.Size = new System.Drawing.Size(297, 31);
+            this.txt_semester4.TabIndex = 21;
             // 
             // panel7
             // 
@@ -368,28 +369,28 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_nis;
+        private System.Windows.Forms.TextBox txt_semester1;
         private System.Windows.Forms.Label label_action_status;
         private System.Windows.Forms.Button btn_submit;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt_semester6;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_semester5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_semester4;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_semester3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_semester2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
