@@ -21,10 +21,5 @@ namespace KomiteKu
         {
 
         }
-
-        private void btn_clock_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
