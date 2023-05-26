@@ -64,7 +64,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Action.cs" />
+    <Compile Include="Class\Data.cs" />
+    <Compile Include="Class\Execute.cs" />
     <Compile Include="View\CetakPembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,5 +193,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

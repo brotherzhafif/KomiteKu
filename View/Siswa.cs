@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KomiteKu.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +17,11 @@ namespace KomiteKu
         {
             InitializeComponent();
         }
-        public string status = "tambah+";
+        public string status = "tambah";
 
         private void Action(object sender, EventArgs e)
         {
-
+            Execute.Sql(sender.ToString(), this.Name.ToString().ToLower(), status);
         }
     }
 }
