@@ -134,7 +134,7 @@
             this.MaximumSize = new System.Drawing.Size(458, 700);
             this.MinimumSize = new System.Drawing.Size(233, 363);
             this.Name = "Ruangan";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ruangan";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);

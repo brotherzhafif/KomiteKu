@@ -183,7 +183,7 @@
             this.MaximumSize = new System.Drawing.Size(992, 490);
             this.MinimumSize = new System.Drawing.Size(382, 490);
             this.Name = "Siswa";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Siswa";
             ((System.ComponentModel.ISupportInitialize)(this.dgv_siswa)).EndInit();
             this.panel1.ResumeLayout(false);

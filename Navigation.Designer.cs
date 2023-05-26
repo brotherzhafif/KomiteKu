@@ -143,7 +143,7 @@
             this.btn_graphic.Name = "btn_graphic";
             this.btn_graphic.Size = new System.Drawing.Size(209, 44);
             this.btn_graphic.TabIndex = 63;
-            this.btn_graphic.Text = "Statisctic";
+            this.btn_graphic.Text = "Statistic";
             this.btn_graphic.UseVisualStyleBackColor = false;
             // 
             // btn_history

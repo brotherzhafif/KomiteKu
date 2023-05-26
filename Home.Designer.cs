@@ -167,8 +167,8 @@
             this.ruangan,
             this.pembayaran,
             this.toolStripSeparator3,
-            this.statisctic,
-            this.history});
+            this.history,
+            this.statisctic});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(47, 21);
             this.editToolStripMenuItem.Text = "View";
@@ -296,6 +296,7 @@
             this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
             this.settingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.settingToolStripMenuItem.Text = "Setting";
+            this.settingToolStripMenuItem.Click += new System.EventHandler(this.Navigate);
             // 
             // toolStripSeparator7
             // 

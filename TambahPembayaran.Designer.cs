@@ -162,10 +162,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(366, 450);
+            this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Location = new System.Drawing.Point(235, 5);
+            this.MaximumSize = new System.Drawing.Size(382, 489);
+            this.MinimumSize = new System.Drawing.Size(382, 489);
             this.Name = "TambahPembayaran";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TambahPembayaran";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
