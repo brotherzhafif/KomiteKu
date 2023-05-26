@@ -2,6 +2,7 @@
 Aplikasi Administrasi Sekolah Yang Digunakan Untuk Mendata Pembayaran Uang Komite Siswa
 
 ### Fitur Utama
+- Database Tanpa Perlu Koneksi (LocalDatabase)
 - Dapat Melakukan Print Nota Alias Bukti Pembayaran Siswa Secara Langsung Atau Melalui Form History
 - Mendata Seluruh Siswa, Status Pembayaran Siswa Dan Juga History Setiap Kali Terjadi Pembayaran Komite
 - Setting Untuk Nominal Yang Dibayar Pada Tiap Semester
