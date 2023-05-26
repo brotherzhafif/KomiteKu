@@ -64,73 +64,74 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CetakPembayaran.cs">
+    <Compile Include="Class\Action.cs" />
+    <Compile Include="View\CetakPembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CetakPembayaran.Designer.cs">
+    <Compile Include="View\CetakPembayaran.Designer.cs">
       <DependentUpon>CetakPembayaran.cs</DependentUpon>
     </Compile>
-    <Compile Include="History.cs">
+    <Compile Include="View\History.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="History.Designer.cs">
+    <Compile Include="View\History.Designer.cs">
       <DependentUpon>History.cs</DependentUpon>
     </Compile>
-    <Compile Include="Navigation.cs">
+    <Compile Include="View\Navigation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Navigation.Designer.cs">
+    <Compile Include="View\Navigation.Designer.cs">
       <DependentUpon>Navigation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home.cs">
+    <Compile Include="View\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home.Designer.cs">
+    <Compile Include="View\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms.cs" />
+    <Compile Include="Class\Forms.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ruangan.cs">
+    <Compile Include="View\Ruangan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ruangan.Designer.cs">
+    <Compile Include="View\Ruangan.Designer.cs">
       <DependentUpon>Ruangan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Setting.cs">
+    <Compile Include="View\Setting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Setting.Designer.cs">
+    <Compile Include="View\Setting.Designer.cs">
       <DependentUpon>Setting.cs</DependentUpon>
     </Compile>
-    <Compile Include="Siswa.cs">
+    <Compile Include="View\Siswa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Siswa.Designer.cs">
+    <Compile Include="View\Siswa.Designer.cs">
       <DependentUpon>Siswa.cs</DependentUpon>
     </Compile>
-    <Compile Include="StatusPembayaran.cs">
+    <Compile Include="View\StatusPembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StatusPembayaran.Designer.cs">
+    <Compile Include="View\StatusPembayaran.Designer.cs">
       <DependentUpon>StatusPembayaran.cs</DependentUpon>
     </Compile>
-    <Compile Include="TambahPembayaran.cs">
+    <Compile Include="View\TambahPembayaran.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TambahPembayaran.Designer.cs">
+    <Compile Include="View\TambahPembayaran.Designer.cs">
       <DependentUpon>TambahPembayaran.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CetakPembayaran.resx">
+    <EmbeddedResource Include="View\CetakPembayaran.resx">
       <DependentUpon>CetakPembayaran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="History.resx">
+    <EmbeddedResource Include="View\History.resx">
       <DependentUpon>History.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Navigation.resx">
+    <EmbeddedResource Include="View\Navigation.resx">
       <DependentUpon>Navigation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
+    <EmbeddedResource Include="View\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -142,19 +143,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Ruangan.resx">
+    <EmbeddedResource Include="View\Ruangan.resx">
       <DependentUpon>Ruangan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Setting.resx">
+    <EmbeddedResource Include="View\Setting.resx">
       <DependentUpon>Setting.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Siswa.resx">
+    <EmbeddedResource Include="View\Siswa.resx">
       <DependentUpon>Siswa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StatusPembayaran.resx">
+    <EmbeddedResource Include="View\StatusPembayaran.resx">
       <DependentUpon>StatusPembayaran.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TambahPembayaran.resx">
+    <EmbeddedResource Include="View\TambahPembayaran.resx">
       <DependentUpon>TambahPembayaran.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -168,13 +169,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Data\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="db.mdf">
+    <Content Include="Data\db.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="db_log.ldf">
+    <Content Include="Data\db_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>db.mdf</DependentUpon>
     </Content>
