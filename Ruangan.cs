@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace KomiteKu
 {
-    public partial class Navigation : Form
+    public partial class Ruangan : Form
     {
-        public Navigation()
+        public Ruangan()
         {
             InitializeComponent();
-        }
-
-        private void Navigation_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_clock_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
