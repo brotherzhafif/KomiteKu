@@ -14,7 +14,8 @@ namespace KomiteKu.Class
         // Declare Some Regex
         public static Regex text = new Regex("[a-zA-Z ]");
         public static Regex number = new Regex("[0-9.,]");
-        
+        public static Regex special = new Regex("[0-9a-zA-Z ]");
+
         // Validating Every Inputs 
         public static bool InputErrors(string[] input, Regex regex)
         {
