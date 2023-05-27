@@ -4,7 +4,7 @@ namespace KomiteKu.Controller
 {
     internal class Execute : Data
     {
-        public static void Sql(string action, string sql, string id)
+        public static void Sql(string action, string sql)
         {
 
         }

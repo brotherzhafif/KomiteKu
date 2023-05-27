@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\Check.cs" />
     <Compile Include="Class\Data.cs" />
     <Compile Include="Class\Execute.cs" />
     <Compile Include="View\CetakPembayaran.cs">

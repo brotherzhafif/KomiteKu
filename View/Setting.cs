@@ -2,6 +2,7 @@
 using System;
 using System.Configuration;
 using System.Windows.Forms;
+using KomiteKu.Class;
 
 namespace KomiteKu
 {
@@ -12,22 +13,21 @@ namespace KomiteKu
             InitializeComponent();
             ReadConfig();
         }
-        
+
         // Config Handler Start
         public void ReadConfig()
         {
+            TextBox[] input = { txt_semester0, txt_semester1, txt_semester2, txt_semester3, txt_semester4, txt_semester5 };
             try
             {
                 // Get the AppSettings section.
                 NameValueCollection appSettings = ConfigurationManager.AppSettings;
 
                 // Display The Setting To The Textbox
-                txt_semester1.Text = appSettings[0].ToString();
-                txt_semester2.Text = appSettings[1].ToString();
-                txt_semester3.Text = appSettings[2].ToString();
-                txt_semester4.Text = appSettings[3].ToString();
-                txt_semester5.Text = appSettings[4].ToString();
-                txt_semester6.Text = appSettings[5].ToString();
+                for (int i = 0; i < input.Length; i++)
+                {
+                    input[i].Text = appSettings[i];
+                }
             }
             catch (ConfigurationErrorsException e)
             {
@@ -36,24 +36,20 @@ namespace KomiteKu
         }
         public void UpdateConfig(object sender, EventArgs e)
         {
-            // Get the application configuration file.
-            System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+            // Check If The Input Was Valid
+            string[] input = { txt_semester0.Text, txt_semester1.Text, txt_semester2.Text, txt_semester3.Text, txt_semester4.Text, txt_semester5.Text };
 
-            config.AppSettings.Settings.Remove("semester1");
-            config.AppSettings.Settings.Remove("semester2");
-            config.AppSettings.Settings.Remove("semester3");
-            config.AppSettings.Settings.Remove("semester4");
-            config.AppSettings.Settings.Remove("semester5");
-            config.AppSettings.Settings.Remove("semester6");
-
-            config.AppSettings.Settings.Add("semester1", txt_semester1.Text);
-            config.AppSettings.Settings.Add("semester2", txt_semester2.Text);
-            config.AppSettings.Settings.Add("semester3", txt_semester3.Text);
-            config.AppSettings.Settings.Add("semester4", txt_semester4.Text);
-            config.AppSettings.Settings.Add("semester5", txt_semester5.Text);
-            config.AppSettings.Settings.Add("semester6", txt_semester6.Text);
-
-            SaveConfigFile(config);
+            if (Check.Errors(input, Check.number))
+            {
+                // Get the application configuration file.
+                System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+                for (int i = 0; i < input.Length; i++)
+                {
+                    config.AppSettings.Settings.Remove("semester" + i);
+                    config.AppSettings.Settings.Add("semester" + i, input[i]);
+                }
+                SaveConfigFile(config);
+            }    
         }
         private static void SaveConfigFile(System.Configuration.Configuration config)
         {
