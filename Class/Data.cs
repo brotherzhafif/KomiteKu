@@ -13,6 +13,10 @@ namespace KomiteKu.Class
         public static SqlConnection connection = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"|DataDirectory|\\Data\\db.mdf\";Integrated Security=True");
 
         // SQL Code For Each Execution
-        public static string SQL_InsertSiswa;
+        // Tabel Ruangan SQL Code Start
+        public static string SqlInsertRuangan = "INSERT INTO Ruangan (kelas) VALUES (@input0)";
+        public static string SqlDeleteRuangan = "DELETE FROM Ruangan WHERE kelas=@input0";
+        public static string SQLSelectAllRuangan = "SELECT * FROM Ruangan";
+
     }
 }

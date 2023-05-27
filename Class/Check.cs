@@ -11,10 +11,12 @@ namespace KomiteKu.Class
 {
     internal class Check
     {
+        // Declare Some Regex
         public static Regex text = new Regex("[a-zA-Z ]");
         public static Regex number = new Regex("[0-9.,]");
-
-        public static bool Errors(string[] input, Regex regex)
+        
+        // Validating Every Inputs 
+        public static bool InputErrors(string[] input, Regex regex)
         {
             bool valid = true;
             for (int i = 0; i < input.Length; i++)
@@ -42,6 +44,16 @@ namespace KomiteKu.Class
                 return true;
             }
             return false;
+        }
+
+        // Check Decide Which Action Will Execute Next
+        public static string Decision(object sender)
+        {
+            if (sender.ToString().ToLower().Contains("hapus")) return "hapus";
+            if (sender.ToString().ToLower().Contains("tambah")) return "tambah";
+            if (sender.ToString().ToLower().Contains("edit")) return "edit";
+
+            return "";
         }
     }
 }

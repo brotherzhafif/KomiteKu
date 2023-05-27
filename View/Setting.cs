@@ -39,7 +39,7 @@ namespace KomiteKu
             // Check If The Input Was Valid
             string[] input = { txt_semester0.Text, txt_semester1.Text, txt_semester2.Text, txt_semester3.Text, txt_semester4.Text, txt_semester5.Text };
 
-            if (Check.Errors(input, Check.number))
+            if (Check.InputErrors(input, Check.number) == true)
             {
                 // Get the application configuration file.
                 System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);

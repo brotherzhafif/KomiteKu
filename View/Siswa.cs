@@ -18,14 +18,19 @@ namespace KomiteKu
         {
             InitializeComponent();
         }
+
         private void Action(object sender, EventArgs e)
         {
             var status = btn_submit.Text.ToLower();
             MessageBox.Show(status);
 
             string[] textbox = { txt_nis.Text, txt_nama.Text };
-            Check.Errors(textbox, Check.text);
+            Check.InputErrors(textbox, Check.text);
         }
-        
+
+        private void Siswa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

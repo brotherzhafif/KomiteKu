@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using KomiteKu.Class;
+using KomiteKu.Controller;
+using System;
 using System.Windows.Forms;
 
 namespace KomiteKu
@@ -15,6 +10,17 @@ namespace KomiteKu
         public Ruangan()
         {
             InitializeComponent();
+            DGV_Ruangan.DataSource = Execute.Select(Data.SQLSelectAllRuangan);
+        }
+        private void Action(object sender, EventArgs e)
+        {     
+            string[] inputs = { txt_kelas.Text };
+            if (Check.InputErrors(inputs, Check.text) == true)
+            {
+                if (Check.Decision(sender) == "hapus") Execute.Record(Data.SqlDeleteRuangan, inputs); 
+                if (Check.Decision(sender) == "tambah") Execute.Record(Data.SqlInsertRuangan, inputs);
+            }
+            DGV_Ruangan.DataSource = Execute.Select(Data.SQLSelectAllRuangan);
         }
     }
 }
