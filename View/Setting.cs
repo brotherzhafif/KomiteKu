@@ -3,6 +3,7 @@ using System;
 using System.Configuration;
 using System.Windows.Forms;
 using KomiteKu.Class;
+using KomiteKu.Controller;
 
 namespace KomiteKu
 {
@@ -11,22 +12,19 @@ namespace KomiteKu
         public Setting()
         {
             InitializeComponent();
-            ReadConfig();
+            FillInput();
         }
 
         // Config Handler Start
-        public void ReadConfig()
+        public void FillInput()
         {
             TextBox[] input = { txt_semester0, txt_semester1, txt_semester2, txt_semester3, txt_semester4, txt_semester5 };
             try
             {
-                // Get the AppSettings section.
-                NameValueCollection appSettings = ConfigurationManager.AppSettings;
-
                 // Display The Setting To The Textbox
                 for (int i = 0; i < input.Length; i++)
                 {
-                    input[i].Text = appSettings[i];
+                    input[i].Text = Execute.Select(Data.SqlSelectNonimal).Rows[0][i].ToString();
                 }
             }
             catch (ConfigurationErrorsException e)
@@ -41,32 +39,9 @@ namespace KomiteKu
 
             if (Check.InputErrors(input, Check.number) == true)
             {
-                // Get the application configuration file.
-                System.Configuration.Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-                for (int i = 0; i < input.Length; i++)
-                {
-                    config.AppSettings.Settings.Remove("semester" + i);
-                    config.AppSettings.Settings.Add("semester" + i, input[i]);
-                }
-                SaveConfigFile(config);
-            }    
-        }
-        private static void SaveConfigFile(System.Configuration.Configuration config)
-        {
-            string sectionName = "appSettings";
-
-            // Save the configuration file.
-            config.Save(ConfigurationSaveMode.Modified);
-
-            // Force a reload of the changed section. This  
-            // makes the new values available for reading.
-            ConfigurationManager.RefreshSection(sectionName);
-
-            // Get the AppSettings section.
-            AppSettingsSection appSettingSection =
-              (AppSettingsSection)config.GetSection(sectionName);
-
-            MessageBox.Show("Setting berhasil diperbarui");
+                Execute.Record(Data.SqlUpdateNominal, input);
+            }
+            FillInput();
         }
     }
 }

@@ -24,5 +24,9 @@ namespace KomiteKu.Class
         public static string SqlDeleteSiswa = "DELETE FROM Siswa WHERE nis=@input0";
         public static string SqlInsertSiswa = "INSERT INTO Siswa (nis, nama, kelas) VALUES (@input0, @input1, @input2)";
         public static string SqlUpdateSiswa = "UPDATE Siswa SET nama=@input1, kelas=@input2 WHERE nis=@input0";
+
+        // Tabel Nominal SQL Code Start
+        public static string SqlSelectNonimal = "SELECT * FROM Nominal";
+        public static string SqlUpdateNominal = "UPDATE Nominal SET semester1=@input0, semester2=@input1, semester3=@input2, semester4=@input3, semester5=@input4, semester6=@input5";
     }
 }
